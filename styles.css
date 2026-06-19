@@ -97,7 +97,7 @@ img {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: var(--primary) url('assets/logo-kopi.png') center/cover no-repeat;
+  background: var(--primary) url('logo-kopi.png') center/cover no-repeat;
   font-size: 0;
   overflow: hidden;
   flex-shrink: 0;
