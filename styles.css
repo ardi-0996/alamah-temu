@@ -532,6 +532,7 @@ img {
   background: var(--primary);
   color: var(--primary-fg);
   margin-top: 6rem;
+  padding: 0 1.5rem;
 }
 
 .footer-grid {
