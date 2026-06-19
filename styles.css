@@ -13,7 +13,7 @@
 
 /* Design tokens */
 :root {
-  --bg: #faf7f2;
+  --bg: #faf8f5; 
   --fg: #2a1f17;
   --muted: #7a6b5d;
   --card: #ffffff;
@@ -88,7 +88,7 @@ img {
   top: 0;
   z-index: 40;
   backdrop-filter: blur(10px);
-  background: rgba(250, 247, 242, 0.85);
+  background: white;
   border-bottom: 1px solid var(--border);
 }
 
@@ -649,7 +649,13 @@ img {
 
 @media (max-width: 640px) {
   .page-head {
-    padding: 3rem 0 2rem;
+    padding: 3rem 1.25rem 2rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .page-head {
+    padding: 2.5rem 1rem 1.5rem;
   }
 }
 
@@ -663,6 +669,16 @@ img {
   margin-top: 1.25rem;
   font-size: 1.1rem;
   color: var(--muted);
+  line-height: 1.7;
+}
+
+@media (max-width: 640px) {
+  .page-head h1 {
+    font-size: clamp(1.8rem, 5vw, 2.5rem);
+  }
+  .page-head p {
+    font-size: 0.95rem;
+  }
 }
 
 /* ============================================
@@ -776,12 +792,18 @@ img {
 .cover {
   width: 100%;
   max-width: 700px;
-  height: 900px;
-  object-fit: contain;
+  height: 450px;
+  object-fit: cover;
   display: block;
   margin: 0 auto;
   border-radius: 1rem;
   box-shadow: var(--shadow-warm);
+}
+
+@media (max-width: 640px) {
+  .cover {
+    height: 250px;
+  }
 }
 
 .values {
